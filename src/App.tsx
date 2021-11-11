@@ -1,12 +1,12 @@
 import React from 'react';
-import { Logo } from './Logo';
 import './App.css';
+import { Layers } from './layers/Layers';
 
 function App() {
   return (
     <div className="App">
       <main className="App-header">
-        <Logo />
+        <Layers />
       </main>
     </div>
   );

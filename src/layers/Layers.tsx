@@ -24,7 +24,7 @@ export const Layers = () => {
     }
   };
 
-  useEffect(() => {
+  const resetLayers = () => {
     const _top = top.current;
     const _middle = middle.current;
     const _bottom = bottom.current;
@@ -39,11 +39,16 @@ export const Layers = () => {
         x: 100,
       });
     }
+  };
+
+  useEffect(() => {
+    resetLayers();
   }, []);
 
   return (
     <div className={'layers'}>
       <div className={'layers__trigger'} onClick={triggerAnimation}>trigger</div>
+      <div className={'layers__reset'} onClick={resetLayers}>reset</div>
       <svg
         width={580}
         height={580}

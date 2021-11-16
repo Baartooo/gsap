@@ -6,8 +6,9 @@
     align-items: center;
 }
 
-.layers__trigger {
-    margin-bottom: 100px;
+.layers__trigger,
+.layers__reset {
+    margin-bottom: 10px;
     padding: 5px 10px;
 
     width: 100px;
@@ -23,6 +24,14 @@
     cursor: pointer;
     transition: 200ms;
 }
-.layers__trigger:hover {
+
+.layers__reset {
+    margin-bottom: 80px;
+
+    background: #fb6161;
+}
+
+.layers__trigger:hover,
+.layers__reset:hover {
     box-shadow: -5px 5px 20px rgba(0, 0, 0, .3);
 }

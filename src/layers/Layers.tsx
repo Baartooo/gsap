@@ -19,7 +19,7 @@ export const Layers = () => {
         x: 0,
         autoAlpha: 1,
         duration: 1,
-        stagger: 1, // seconds between elements animation trigger
+        // stagger: 1, // seconds between elements animation trigger
       });
     }
   };

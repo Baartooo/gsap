@@ -19,7 +19,7 @@ export const Layers = () => {
         x: 0,
         autoAlpha: 1,
         duration: 1,
-        // stagger: 1
+        stagger: 1, // seconds between elements animation trigger
       });
     }
   };
@@ -28,6 +28,7 @@ export const Layers = () => {
     const _top = top.current;
     const _middle = middle.current;
     const _bottom = bottom.current;
+    gsap.killTweensOf([_top, _middle, _bottom]);
 
     if (_top && _middle && _bottom) {
       gsap.set([_top, _bottom], {

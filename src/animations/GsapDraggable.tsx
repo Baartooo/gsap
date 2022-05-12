@@ -5,6 +5,8 @@ import { Draggable } from 'gsap/Draggable';
 
 import { Squares } from '../squares/Squares';
 
+gsap.registerPlugin(Draggable);
+
 export const GsapDraggable = () => {
   const red = useRef<HTMLDivElement>(null);
   const green = useRef<HTMLDivElement>(null);
@@ -40,10 +42,9 @@ export const GsapDraggable = () => {
     const _blue = blue.current;
 
     if (_red && _green && _blue) {
-      gsap.registerPlugin(Draggable);
 
       const draggable = Draggable.create([_red, _green, _blue], {
-        // type: 'rotation', // also rotation is possible
+        type: 'rotation', // also rotation is possible
       });
 
       return () => {

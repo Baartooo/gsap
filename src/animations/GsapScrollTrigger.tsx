@@ -3,6 +3,8 @@ import React, { createRef, RefObject, useCallback, useEffect, useRef } from 'rea
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+gsap.registerPlugin(ScrollTrigger);
+
 export const GsapScrollTrigger = () => {
   const labels = ['elo', '3', '2', '0'];
   const sections = useRef<RefObject<HTMLDivElement>[]>(labels.map(() => createRef()));
@@ -19,7 +21,6 @@ export const GsapScrollTrigger = () => {
   useEffect(() => {
     hideAllLabels();
 
-    gsap.registerPlugin(ScrollTrigger);
     sections.current.forEach(section => {
       gsap.to(section.current, {
         scrollTrigger: {

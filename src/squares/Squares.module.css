@@ -1,0 +1,54 @@
+.square {
+    margin: 25px;
+
+    width: 150px;
+    height: 150px;
+}
+
+.red {
+    background: #ad5e5e;
+}
+
+.green {
+    background: #6fad5e;
+}
+
+.blue {
+    background: #5e6ead;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trigger,
+.reset {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+
+    width: 100px;
+
+    background: #61dafb;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    color: #000000;
+
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, .1);
+
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.reset {
+    margin-bottom: 80px;
+
+    background: #e5e25b;
+}
+
+.trigger:hover,
+.reset:hover {
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, .3);
+}

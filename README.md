@@ -1,6 +1,6 @@
 # tsh-stories gsap sample
 
-## useful links
+## sources
 - [docs 📄](https://greensock.com/docs/)
 - [plugins 🔌](https://greensock.com/gsap-plugins/)
 - [community 👥](https://greensock.com/forums/)

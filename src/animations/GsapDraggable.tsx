@@ -44,7 +44,7 @@ export const GsapDraggable = () => {
     if (_red && _green && _blue) {
 
       const draggable = Draggable.create([_red, _green, _blue], {
-        type: 'rotation', // also rotation is possible
+        // type: 'rotation', // also rotation is possible
       });
 
       return () => {
